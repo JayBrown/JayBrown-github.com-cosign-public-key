@@ -1,0 +1,12 @@
+cosign public key for JayBrown@github.com
+
+INSTALL
+
+* download or clone repo
+* mkdir "$HOME/.cosign"
+* cp ./JayBrown@github.com.cosign.pub "$HOME/.cosign/JayBrown@github.com.cosign.pub"
+
+VERIFY SIGNATURES
+
+* install cosign (on macOS e.g. with Homebrew)
+* `cosign verify-blob --signature ./FILE.cosign.sig --key "$HOME/.cosign/JayBrown@github.com.cosign.pub" ./FILE
